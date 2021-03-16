@@ -1,0 +1,44 @@
+                                                                body {
+                                                                background-size: cover;
+                                                            }
+                                                            
+                                                            #chat_box {
+                                                                width: 905px;
+                                                                border-radius: 35px;
+                                                                height: 45px;
+                                                                border-style: ridge;
+                                                            }
+                                                            
+                                                            #room {
+                                                                font-size: 45px;
+                                                                color: blue;
+                                                                text-decoration: underline;
+                                                            }
+                                                            
+                                                            .button {
+                                                                display: inline-block;
+                                                                padding: 15px 25px;
+                                                                font-size: 24px;
+                                                                cursor: pointer;
+                                                                text-align: center;
+                                                                text-decoration: none;
+                                                                outline: none;
+                                                                color: blueviolet;
+                                                                background-color: yellow;
+                                                                border: none;
+                                                                border-radius: 15px;
+                                                                box-shadow: 0 9px bisque;
+                                                            }
+                                                            
+                                                            .button:hover {
+                                                                background-color: orange;
+                                                            }
+                                                            
+                                                            #logout {
+                                                                font-size: 20px;
+                                                                float: right;
+                                                            }
+                                                            
+                                                            .button:active {
+                                                                box-shadow: 0 5px burlywood;
+                                                                transform: translateY(4px);
