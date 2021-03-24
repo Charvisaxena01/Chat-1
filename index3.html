@@ -1,9 +1,8 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>
-        Chat
-    </title>
+    <title>Kwitter Message page</title>
     <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
@@ -12,32 +11,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="style2.css">
-    <script src="kwiiter_room.js"></script>
+    <link rel="stylesheet" type="text/css" href="style3.css">
 </head>
 
-<body background="spe.jpg">
-    <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
+<body background="chat8.jpg">
     <center>
-        <h1> Let us Chat</h1>
-        <sup>
-        <h2 id="wel"></h2>
-        </sup>
-        </h1>
-        <h3> Let's create chat room </h3>
-        <input id="chat_box" type="text" placeholder="Enter Name for your Chat Room">
-        <br> <br>
-        <button class="button" onclick="addRoom()"> Add </button>
-        <br> <br> <br>
-        <label id="room"> #TrendingRooms </label>
-        <div id="output"> </div>
+        <h1> Chatting Time </h1>
+        <div id="msg" style="text-align: left;margin-bottom: 70px;">
 
+        </div>
+    </center>
+    <center>
+        <br>
+        <div id=" msg2 ">
+            <br>
+            <input type="text " id="message" placeholder="Type your message " class="form-control ">
+            <br>
+            <button onclick="send()" class="btn btn-warning "> Send </button>
+            <br>
+        </div>
     </center>
 
-</body>
 
-</html>
+</body>

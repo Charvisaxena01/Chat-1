@@ -1,0 +1,21 @@
+            body {
+                background-repeat: no-repeat;
+                background-position-x: center;
+                background: position y 56px;
+                background-color: yellow;
+            }
+            
+            .chat_div {
+                border-radius: 15px;
+                background: rgba(255, 255, 255, 0.8);
+                float: none;
+                border-color: black;
+                border: 5px;
+            }
+            
+            #msg2 {
+                position: fixed;
+                bottom: 0px;
+                width: 100%;
+                background-color: lightgreen;
+            }

@@ -1,16 +1,16 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyBw66ZWU1i_ApJbuuZ_JPnsJzHN9VRStn0",
-    authDomain: "kwitter-cdd75.firebaseapp.com",
-    databaseURL: "https://kwitter-cdd75-default-rtdb.firebaseio.com",
-    projectId: "kwitter-cdd75",
-    storageBucket: "kwitter-cdd75.appspot.com",
-    messagingSenderId: "1057683855884",
-    appId: "1:1057683855884:web:afeac29a00d38df7322c29"
+    apiKey: "AIzaSyDjjQ37b53IqDQFr6NlO7aRchlK7-rwiRU",
+    authDomain: "kwitter-project-7265d.firebaseapp.com",
+    databaseURL: "https://kwitter-project-7265d-default-rtdb.firebaseio.com",
+    projectId: "kwitter-project-7265d",
+    storageBucket: "kwitter-project-7265d.appspot.com",
+    messagingSenderId: "924609350195",
+    appId: "1:924609350195:web:173502cbf5989825f0b146"
 };
-
+// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 user_name = localStorage.getItem("User Name");
-document.getElementById("user_name").innerHTML = "Welcome " + user_name + "!";
+//document.getElementById("wel").innerHTML = "Welcome" + user_name + "!";
 
 function addRoom() {
     room_name = document.getElementById("chat_box").value;
@@ -27,7 +27,7 @@ function getData() {
             Room_names = childKey;
             //  //Start code
             console.log(Room_names);
-            row = "<div class'room_name' id=''" + Room_names + "onclick='redirectToRoom(this.id)'>#" + Room_names + "</div> <hr>";
+            row = "<div class'room_name' id='" + Room_names + "'onclick='redirectToRoom(this.id)'>#" + Room_names + "</div> <hr>";
 
             document.getElementById("output").innerHTML += row;
             //End code
